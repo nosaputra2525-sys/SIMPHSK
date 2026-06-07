@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       gradient: LinearGradient(
                         colors: [
                           Theme.of(context).primaryColor,
-                          Theme.of(context).primaryColor.withOpacity(0.7),
+                          Theme.of(context).primaryColor.withValues(alpha: 0.7),
                         ],
                       ),
                       borderRadius: BorderRadius.circular(12),
@@ -174,7 +174,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: Theme.of(context).primaryColor.withOpacity(0.1),
+              color: Theme.of(context).primaryColor.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(icon, color: Theme.of(context).primaryColor),
@@ -225,7 +225,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           borderRadius: BorderRadius.circular(8),
           color: isCurrentUser
-              ? Theme.of(context).primaryColor.withOpacity(0.05)
+              ? Theme.of(context).primaryColor.withValues(alpha: 0.05)
               : null,
         ),
         child: Row(
